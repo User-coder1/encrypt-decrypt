@@ -11,21 +11,24 @@
         <div class="section encrypt-section">
             <h2>Encrypt</h2>
             <textarea id="encrypt-input" placeholder="Enter text or JSON to encrypt"></textarea>
-            <input type="text" id="encrypt-key" placeholder="Enter Key">
-            <input type="text" id="encrypt-iv" placeholder="Enter IV">
+            <input type="text" id="encrypt-key" placeholder="Enter Key" autocomplete="off">
+            <input type="text" id="encrypt-iv" placeholder="Enter IV" autocomplete="off">
             <button id="encrypt-btn">Encrypt</button>
             <textarea id="encrypt-output" placeholder="Encrypted output" readonly></textarea>
+            <button id="copy-encrypt-output">Copy Encrypted Output</button>
         </div>
         <div class="spacer"></div>
         <div class="section decrypt-section">
             <h2>Decrypt</h2>
             <textarea id="decrypt-input" placeholder="Enter encrypted text"></textarea>
-            <input type="text" id="decrypt-key" placeholder="Enter Key">
-            <input type="text" id="decrypt-iv" placeholder="Enter IV">
+            <input type="text" id="decrypt-key" placeholder="Enter Key" autocomplete="off">
+            <input type="text" id="decrypt-iv" placeholder="Enter IV" autocomplete="off">
             <button id="decrypt-btn">Decrypt</button>
             <textarea id="decrypt-output" placeholder="Decrypted output" readonly></textarea>
+            <button id="copy-decrypt-output">Copy Decrypted Output</button>
         </div>
     </div>
+    <div id="toast" class="hidden">Copied to clipboard!</div>
     <script src="script.js"></script>
 </body>
 </html>
